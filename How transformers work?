@@ -1,0 +1,11 @@
+Documentation:16-10-26
+
+  Chatgpt,gemini,claude = all are gpt's (generative pre-trained transformers)
+
+  how they work is they work solely on the probability because for example the input  is like this 
+ input: """ My Name """ ===>Transformer ===> it will check (what is the probability of word after the Name it might be the was(0.5),is(0.9),the(0.2) 
+
+so highest probability is "is" so the sentence might become "My Name is " 
+
+  now input: "My Name is" ===>Transformer ===> noun(0.9),pronoun(0.2) likewise 
+output:"My Name is Shiva"
