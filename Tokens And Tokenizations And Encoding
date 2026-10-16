@@ -1,0 +1,15 @@
+Documentation:16-10-26
+
+tokens is nothing but no of words 
+ex:"Who is the Pm of india" 
+
+tokens:['who','is','the','pm','of','india'] ===>LLM
+
+
+every token has its own id for example who=2347 , is=5674, the=98 likewise every token has its own collection 
+
+
+Tokenization :Tokenization is the process of breaking down raw text (a sentence, paragraph, or document) into smaller, manageable chunks called tokens.
+These tokens can be words, subwords (pieces of words), or individual characters, depending on the tokenizer (e.g., Byte-Pair Encoding used by modern LLMs).
+
+Encoding:Once you have the tokens, the model passes them through a vocabulary dictionary to map each token to a unique integer ID.
