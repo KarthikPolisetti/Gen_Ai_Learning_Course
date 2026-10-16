@@ -1,0 +1,17 @@
+Documentation:16-10-26
+
+1)LLM: The model which is  trained on huge amount of large text data 
+
+'''it can only generate text data '''
+
+2)LVM: The model which is  trained on huge amount of large video data 
+
+'''it can only generate video data '''
+
+3)LAM: The model which is  trained on huge amount of large audio data 
+
+'''it can only generate audio data '''
+
+4)LIM: The model which is  trained on huge amount of large image data 
+
+'''it can only generate image data '''
