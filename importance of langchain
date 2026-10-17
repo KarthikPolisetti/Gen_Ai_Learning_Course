@@ -1,0 +1,32 @@
+Documentation : 17-10-26
+
+in simple terms Langchain is a open source framework to run ai models
+
+why should we have to use the langchain and what problem it solved:
+
+if we wanted to run a ai tool locally for every new single prompt it feels new like it cant remember the previous convo 
+
+so langchain by default contains the previous convo 
+
+
+What Problem Does It Solve?
+If you try to build a real application (like an AI chatbot that answers questions based on your company's internal PDF manuals) using only raw AI models, you hit three massive walls:
+
+1. The Amnesia Problem (Memory)
+The Issue: Raw LLMs treat every single message as a brand-new conversation. They instantly forget what you talked about three prompts ago.
+
+How LangChain Solves It: It includes built-in Memory modules that automatically save past chat history and feed it back into the AI so the conversation feels natural and continuous.
+
+2. The Isolation Problem (Connecting to Data)
+The Issue: An LLM only knows what it was trained on. It doesn't know your personal notes, your company database, or today's news.
+
+How LangChain Solves It: It makes it easy to connect the AI to external data sources (using a technique called RAG - Retrieval-Augmented Generation). LangChain can search your documents, pull the exact paragraphs relevant to your question, and hand them to the AI so it can give an accurate answer.
+
+3. The Single-Task Limitation (Chains and Agents)
+The Issue: Normally, an LLM takes an input and gives an output in one go. It cannot easily do a task that requires steps, like: "First, search the web for competitor prices, then summarize them, and then email the result to my boss."
+
+How LangChain Solves It:
+
+Chains: It lets you link multiple steps together like a conveyor belt (Step A feeds into Step B, which feeds into Step C).
+
+Agents: It gives the AI "tools" (like a calculator or a search engine) and lets the AI dynamically decide which tool to use next to solve a complex problem.
