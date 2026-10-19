@@ -1,0 +1,17 @@
+Documentation:19-10-2026
+
+Langchain = open source framework to build applications using llms(large language models)
+
+Best  realtime example :
+for example we wanted to build a application in this appication it should automatically detect the weather of that location 
+
+sounds easy right but here is the main issue is that app should know where is your current location 
+
+1st api= To know your current location using api 
+2nd api= to detect the weather in that location 
+
+the mandatory thing is to follow step by step process like at any cost it should first fetch the api1 then only api2 which is called as "chain". 
+
+now imagine same if it is 20 api's then it is very difficult right then this langchain is useful from the above example , i showed the example for tools which 
+is one of the component in langchain 
+
