@@ -1,0 +1,46 @@
+#Today i learnt the New Topic in LangChain which is path breaking and at the same time which made the langchain to be used and made it most demanded skill in market 
+
+Documentation:23-10-26
+
+LangChain Expression Language(LCEL)
+
+#The most important method we have to remember is invoke 
+
+earlier in langchain if we wanted to connect a api of ai tool for ex:gemini tool and give it system and user prompt it is the code 
+
+# i wanted to send the input to the gemini api (the packages will changes for the respective api calling ai tool)
+
+------------------------------------------------------
+llm=ChatGenerativeAi(model="gemini-flash-3.5-preview") 
+#we can choose whatever the model 
+-----------------------------------------------------
+
+until above all the code is same but here comes the main thing 
+
+#Earlier they use to write code to send prompt (system and use input)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+prompts=ChatPromptTemplate.from_messages([
+{"role":"system","content":"You are a {language} translator , whatever the input user gave you to translate it to the  {language}"},
+{"role":"user","content":{userinput}}
+])
+
+final_prompts=prompts.format_messages(language="telugu",userinput="i wanted to become a millionaire")
+res=llm.invoke(final_prompts)
+print(res.content)
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+#After that they changed to this code 
+previously they used format_messages but now they are using the invoke() 
+
+prompt_value=prompts.invoke({"language"="telugu","userinput"="i wanted to become a millionaire"})
+res=llm.invoke(prompt_value)
+print(res.content)
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+both the (format_messages) and (invoke) are almost same but the major difference is in "INPUT FORMAT" for i mean for the format_messages it is in "()" where invoke needs in 
+dictionary "key":"value" pair format
