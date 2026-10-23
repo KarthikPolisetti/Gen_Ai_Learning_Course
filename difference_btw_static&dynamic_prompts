@@ -1,0 +1,18 @@
+Documentation:19-10-26
+
+
+Static Prompt:
+Static Prompt is nothing but think of if we are asking a query as 
+
+SystemContent: "you are a telugu translator " humanContent:"translate this sentence "i am a python developer""
+SystemContent: "you are a hindi translator " humanContent:"translate this sentence "i am a java developer""
+SystemContent: "you are a kannada translator " humanContent:"translate this sentence "i am a javascript developer""
+
+now in the System Content only telugu,hindi,kannada and python,java,javascript is only  change other than all the SystemContent and humanContent are almost same
+and no change at all so that there is a wastage of tokens
+
+so to rectify it we use the dynamic prompt such as we use the input parameter 
+SystemContent :"you are a {input} translator" humanContent:"translate this sentence "i am a {input} developer""
+
+so this is the major difference between the static and dynamic prompt 
+
